@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 5;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -35,7 +35,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return a + b;
+  return (x + y);
 }
 
 function resta(x, y) {
@@ -189,12 +189,12 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   var res;
-  if(numero>0){
-    res = "Es Positivo"
+  if(numero > 0){
+    res = "Es positivo";
   }else if(numero == 0){
     res = false;
   }else{
-    res = "Es Negativo"
+    res = "Es negativo";
   }
   return res;
 }
@@ -226,24 +226,21 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var res = (alto * ancho);
-  return "El area del rectangulo es: "+ res;
+  return (alto * ancho);
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var res = (lado * 4);
-  return "El perimetro del cuadrado es: "+res;
+  return (lado * 4);
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var res = ((base * altura)/2);
-  return "El area es del triangulo: "+res;
+  return ((base * altura)/2);
 }
 
 
@@ -251,8 +248,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var Cambio_Moneda = (euro * 1.20);
-  return "Son "+Cambio_Moneda+" Dolares"  
+  return (euro * 1.20);
 }
 
 
@@ -263,13 +259,13 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   var res;
-  var letraM=letra.toLowerCase();
-  if(letraM == "a" || letraM == "e" || letraM == "i" || letraM == "o" || letraM == "u"){
+  
+  if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
     res = "Es vocal";
-  }else if(letra.length>1){
-    res = "Dato incorrecto"
-  }else if(letraM == "a" || letraM == "e" || letraM == "i" || letraM == "o" || letraM == "u"){
-    res = "Dato incorrecto"
+  }else if(letra.length > 1){
+    res = "Dato incorrecto";
+  }else if(letra != "a" || letra != "e" || letra != "i" || letra != "o" || letra != "u"){
+    res = "Dato incorrecto";
   }
   return res;
 }
