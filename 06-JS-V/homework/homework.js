@@ -15,7 +15,7 @@ function crearUsuario() {
     this.password = opciones.password;
   }
   Usuario.prototype.saludar = function (){
-    return 'Hola, mi nombre es '+this.nombre;
+    return 'Hola, mi nombre es el siguiente '+this.nombre;
   }
   return Usuario;
 }
@@ -102,3 +102,6 @@ module.exports = {
   agregarMetodo, 
   Persona
 };
+
+
+
